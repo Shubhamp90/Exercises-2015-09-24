@@ -20,8 +20,28 @@
  * You entered 2 grades. The average is 72.5
  */
 
-public class Grades {
+
+package com.hubberspot.code;
+ 
+import java.util.Scanner;
+ public class Grades {
   public static void main(String[] args) {
+      double Grade1 = 0;
+      double Grade2 = 0;
+      Scanner scanner = new Scanner(System.in);
+      System.out.println("Enter the value of Grade1 : ");
+      Grade1 = scanner.double();
+      System.out.println("Enter the value of Grade2 : ");
+      Grade2 = scanner.double();
+      System.out.println();
+      System.out.println("Calculating percentage of : (Grade1 and Grade2) : ");
+      double result =((Grade1 * Grade2)/100);
+      String Return;
+      System.out.println(Grade1 + Grade2 + " Percemtage is: " + result); 
+      System.out.println();
+              
+              
+              
     
   }
 
